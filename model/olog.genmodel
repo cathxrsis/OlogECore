@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/Olog/src-gen" creationIcons="false" editDirectory="/Olog.edit/src-gen"
+    editorDirectory="/Olog.editor/src-gen" modelPluginID="Olog" modelName="Olog" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>olog.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Olog" disposableProviderFactory="true" ecorePackage="olog.ecore#/">
+    <genClasses ecoreClass="olog.ecore#//Category">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute olog.ecore#//Category/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute olog.ecore#//Category/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference olog.ecore#//Category/arrow"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference olog.ecore#//Category/object"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference olog.ecore#//Category/category"/>
+    </genClasses>
+    <genClasses ecoreClass="olog.ecore#//Object">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute olog.ecore#//Object/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute olog.ecore#//Object/description"/>
+    </genClasses>
+    <genClasses ecoreClass="olog.ecore#//Arrow">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute olog.ecore#//Arrow/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference olog.ecore#//Arrow/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference olog.ecore#//Arrow/to"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute olog.ecore#//Arrow/description"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
